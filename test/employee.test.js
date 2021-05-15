@@ -13,6 +13,7 @@ describe("Employee", () => {
       name: "mike",
       id: 31,
       email: "mike31@hotmail.com",
+      role: "Employee",
     });
   });
 });

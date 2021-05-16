@@ -1,13 +1,21 @@
 const Intern = require("../lib/Intern");
 
 describe("Intern", () => {
+  const mockAnswers = {
+    name: "mike",
+    id: 31,
+    email: "mike31@hotmail.com",
+    school: "kingCross",
+    role: "Intern",
+  };
+
   test("should be a new instance of Intern ", () => {
-    const intern = new Intern();
+    const intern = new Intern(mockAnswers);
 
     expect(intern).toBeInstanceOf(Intern);
   });
   test("should construct new instant object of Intern with name, id, email, school and role", () => {
-    const intern = new Intern("mike", 31, "mike31@hotmail.com", "kingCross");
+    const intern = new Intern(mockAnswers);
 
     expect(intern).toEqual({
       name: "mike",
@@ -17,18 +25,22 @@ describe("Intern", () => {
       role: "Intern",
     });
   });
-});
 
-describe("tests for get", () => {
-  test("should return name when getSchool is called", () => {
-    const intern = new Intern("mike", 31, "mike31@hotmail.com", "kingCross");
+  describe("tests for get methods", () => {
+    test("should return name when getSchool is called", () => {
+      const intern = new Intern(mockAnswers);
 
-    expect(intern.getSchool().toEqual("kingCross"));
-  });
+      const result = intern.getSchool();
 
-  test("should return role when getRole is called", () => {
-    const intern = new Intern("mike", 31, "mike31@hotmail.com", "kingCross");
+      expect(result).toEqual(mockAnswers.school);
+    });
 
-    expect(intern.getRole().toEqual("Intern"));
+    test("should return role when getRole is called", () => {
+      const intern = new Intern(mockAnswers);
+
+      const result = intern.getRole();
+
+      expect(result).toEqual(mockAnswers.role);
+    });
   });
 });

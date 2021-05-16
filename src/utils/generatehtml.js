@@ -10,7 +10,7 @@ const renderManagerCard = (employee) => {
       <p class="card-text">Role: Manager <span><i class="fas fa-briefcase"></i></span> </p>
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">ID: ${employee.employeeID}</li>
+      <li class="list-group-item">ID: ${employee.id}</li>
       <li class="list-group-item">
         Email: <a href="mailto:${employee.email}">${employee.email}</a>
       </li>
@@ -28,7 +28,7 @@ const renderEngineerCard = (employee) => {
       </span></p>
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">ID: ${employee.employeeID}</li>
+      <li class="list-group-item">ID: ${employee.id}</li>
       <li class="list-group-item">
         Email: <a href="mailto:${employee.email}">${employee.email}</a>
       </li>
@@ -46,7 +46,7 @@ const renderInternCard = (employee) => {
       </span></p>
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">ID: ${employee.employeeID}</li>
+      <li class="list-group-item">ID: ${employee.id}</li>
       <li class="list-group-item">
         Email: <a href="mailto:${employee.email}">${employee.email}</a>
       </li>

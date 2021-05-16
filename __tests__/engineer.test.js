@@ -3,9 +3,9 @@ const Engineer = require("../lib/Engineer");
 describe("Engineer", () => {
   const mockAnswers = {
     name: "mike",
-    id: 31,
+    id: "31",
     email: "mike31@hotmail.com",
-    officeNumber: 01212043035,
+    officeNumber: "01212043035",
     github: "https://github.com/Mike",
     role: "Engineer",
   };
@@ -19,9 +19,9 @@ describe("Engineer", () => {
 
     expect(engineer).toEqual({
       name: "mike",
-      id: 31,
+      id: "31",
       email: "mike31@hotmail.com",
-      officeNumber: 01212043035,
+      officeNumber: "01212043035",
       github: "https://github.com/Mike",
       role: "Engineer",
     });
@@ -31,7 +31,7 @@ describe("Engineer", () => {
     test("should return office number when getOfficeNumber is called", () => {
       const engineer = new Engineer(mockAnswers);
 
-      expect(engineer.officeNumber).toEqual(01212043035);
+      expect(engineer.officeNumber).toEqual("01212043035");
     });
 
     test("should return github when getGithub is called", () => {

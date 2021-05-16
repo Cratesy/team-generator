@@ -5,7 +5,6 @@ describe("Employee", () => {
     name: "mike",
     id: 31,
     email: "mike31@hotmail.com",
-    role: "Employee",
   };
   test("should be a new instance of Employee ", () => {
     const employee = new Employee(mockAnswers);
@@ -20,7 +19,6 @@ describe("Employee", () => {
       name: "mike",
       id: 31,
       email: "mike31@hotmail.com",
-      role: "Employee",
     });
   });
 
@@ -43,12 +41,6 @@ describe("Employee", () => {
       const result = employee.getEmail();
 
       expect(employee.email).toEqual("mike31@hotmail.com");
-    });
-
-    test("should return role when getRole is called", () => {
-      const employee = new Employee(mockAnswers);
-
-      expect(employee.role).toEqual("Employee");
     });
   });
 });

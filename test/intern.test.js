@@ -30,17 +30,13 @@ describe("Intern", () => {
     test("should return name when getSchool is called", () => {
       const intern = new Intern(mockAnswers);
 
-      const result = intern.getSchool();
-
-      expect(result).toEqual(mockAnswers.school);
+      expect(intern.school).toEqual("kingCross");
     });
 
     test("should return role when getRole is called", () => {
       const intern = new Intern(mockAnswers);
 
-      const result = intern.getRole();
-
-      expect(result).toEqual(mockAnswers.role);
+      expect(intern.role).toEqual("Intern");
     });
   });
 });

@@ -6,7 +6,7 @@ const createManager = async () => {
   const questions = [
     ...employeeQuestions,
     {
-      type: "input",
+      type: "number",
       message: "What is the managers office number?",
       name: "officeNumber",
     },

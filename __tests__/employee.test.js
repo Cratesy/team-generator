@@ -16,24 +16,25 @@ describe("Employee", () => {
   test("should construct new instant object of employee with name, id, email and role", () => {
     const employee = new Employee(mockAnswers);
 
-    expect(employee).toEqual(mockAnswers);
+    expect(employee).toEqual({
+      name: "mike",
+      id: 31,
+      email: "mike31@hotmail.com",
+      role: "Employee",
+    });
   });
 
   describe("tests for get methods", () => {
     test("should return name when getName is called", () => {
       const employee = new Employee(mockAnswers);
 
-      const result = employee.getName();
-
-      expect(result).toEqual(mockAnswers.name);
+      expect(employee.name).toEqual("mike");
     });
 
     test("should return id when getId is called", () => {
       const employee = new Employee(mockAnswers);
 
-      const result = employee.getId();
-
-      expect(result).toEqual(mockAnswers.id);
+      expect(employee.id).toEqual(31);
     });
 
     test("should return email when getEmail is called", () => {
@@ -41,15 +42,13 @@ describe("Employee", () => {
 
       const result = employee.getEmail();
 
-      expect(result).toEqual(mockAnswers.email);
+      expect(employee.email).toEqual("mike31@hotmail.com");
     });
 
     test("should return role when getRole is called", () => {
       const employee = new Employee(mockAnswers);
 
-      const result = employee.getRole();
-
-      expect(result).toEqual(mockAnswers.role);
+      expect(employee.role).toEqual("Employee");
     });
   });
 });

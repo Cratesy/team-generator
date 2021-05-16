@@ -31,25 +31,19 @@ describe("Engineer", () => {
     test("should return office number when getOfficeNumber is called", () => {
       const engineer = new Engineer(mockAnswers);
 
-      const result = engineer.getOfficeNumber();
-
-      expect(result).toEqual(mockAnswers.officeNumber);
+      expect(engineer.officeNumber).toEqual(01212043035);
     });
 
     test("should return github when getGithub is called", () => {
       const engineer = new Engineer(mockAnswers);
 
-      const result = engineer.getGithub();
-
-      expect(result).toEqual(mockAnswers.github);
+      expect(engineer.github).toEqual("https://github.com/Mike");
     });
 
     test("should return role when getRole is called", () => {
       const engineer = new Engineer(mockAnswers);
 
-      const result = engineer.getRole();
-
-      expect(result).toEqual(mockAnswers.role);
+      expect(engineer.role).toEqual("Engineer");
     });
   });
 });

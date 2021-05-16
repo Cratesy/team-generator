@@ -26,16 +26,12 @@ describe("tests for get methods", () => {
   test("should return office number when getOfficeNumber is called", () => {
     const manager = new Manager(mockAnswers);
 
-    const result = manager.getOfficeNumber();
-
-    expect(result).toEqual(mockAnswers.officeNumber);
+    expect(manager.officeNumber).toEqual(01212043035);
   });
 
   test("should return role when getRole is called", () => {
     const manager = new Manager(mockAnswers);
 
-    const result = manager.getRole();
-
-    expect(result).toEqual(mockAnswers.role);
+    expect(manager.role).toEqual("Manager");
   });
 });

@@ -42,3 +42,6 @@ It populates the team name, and cards for each employee.
 [Mike](https://github.com/Cratesy)
 
 ## Tests
+
+<img src="../team-generator/images/test.snippet.team-generator.PNG"
+alt="tests"/>

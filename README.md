@@ -43,5 +43,5 @@ It populates the team name, and cards for each employee.
 
 ## Tests
 
-<img src="../team-generator/images/test.snippet.team-generator.PNG"
+<img src="./images/test.snippet.team-generator.PNG"
 alt="tests"/>

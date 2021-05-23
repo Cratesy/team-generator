@@ -17,13 +17,15 @@ describe("Intern", () => {
   test("should construct new instant object of Intern with name, id, email, school and role", () => {
     const intern = new Intern(mockAnswers);
 
-    expect(intern).toEqual({
+    const expected = {
       name: "mike",
       id: 31,
       email: "mike31@hotmail.com",
       school: "kingCross",
       role: "Intern",
-    });
+    };
+
+    expect(intern).toEqual(expected);
   });
 
   describe("tests for get methods", () => {

@@ -17,14 +17,16 @@ describe("Engineer", () => {
   test("should construct new instant object of engineer with name id, email, github account and role ", () => {
     const engineer = new Engineer(mockAnswers);
 
-    expect(engineer).toEqual({
+    const expected = {
       name: "mike",
       id: "31",
       email: "mike31@hotmail.com",
       officeNumber: "01212043035",
       github: "https://github.com/Mike",
       role: "Engineer",
-    });
+    };
+
+    expect(engineer).toEqual(expected);
   });
 
   describe("tests for get methods", () => {
